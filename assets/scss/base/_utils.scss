@@ -1,0 +1,14 @@
+.section {
+    margin-top: math.div($spacing, 2);
+    margin-bottom: math.div($spacing, 2);
+}
+.content-centered {
+    max-width: 80rem;
+}
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.w-100 {
+    width: 100%;
+}

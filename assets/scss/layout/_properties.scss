@@ -1,0 +1,78 @@
+.properties {
+  margin-left: auto;
+  margin-right: auto;
+  padding: $spacing-xs;
+  overflow: hidden;
+
+  .filters {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    [type=radio] { 
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    [type=radio] + * {
+      color: lightgray;
+    }
+
+    [type=radio]:checked + * {
+      color: gray;
+    }
+  }
+
+  .test {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 0 0 auto;
+      width: calc(100% - 2rem);
+      
+      @include phone {
+        width: calc(50% - 2rem);
+      }
+      
+      @include tablet {
+        width: calc(33.3333333333% - 2rem);
+      }
+    
+      @include laptop {
+        width: calc(25% - 2rem);
+      }
+    
+      @include desktop {
+        width: calc(20% - 2rem);
+      }
+    }
+  }
+
+  @include phone {
+    width: 100%;
+  }
+  
+  @include tablet {
+    width: 90%;
+    min-width: 750px;
+  }
+
+  @include laptop {
+    width: 95%;
+    // padding: $spacing-l;
+  }
+
+  @include desktop {
+    width: 90%;
+    // padding: $spacing-l $spacing-xl;
+  }
+}

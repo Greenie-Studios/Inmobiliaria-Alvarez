@@ -1,0 +1,114 @@
+.admin {
+  display: flex;
+  flex-direction: column;
+  background-color: #212529;
+  color: white;
+  height: 100vh;
+
+  &-header {
+    display: flex;
+    padding: 3rem 1rem;
+    color: $white;
+    border: 1px solid white;
+    border-style: none none solid none;
+  }
+
+  &-main {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+  }
+
+  &-side {
+    flex: 0 0 7.4rem;
+    display: none;
+    overflow: auto;
+    color: white;
+    border: 1px solid white;
+    border-style: none solid none none;
+    padding: 1.6rem;
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & h5 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: normal;
+      display: none;
+    }
+
+    &.active {
+      flex: 0 0 25rem;
+      display: block;
+
+      & h5 {
+        display: block;
+      }
+    }
+
+    @include tablet {
+      height: auto;
+      position: relative;
+      display: block;
+    }
+    
+    @include laptop {
+      position: relative;
+      flex: 0 0 25rem;
+      display: block;
+
+      & h5 {
+        display: block;
+      }
+
+      &.active {
+        flex: 0 0 7.4rem;
+      //   display: block;
+  
+        & h5 {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  & hr {
+    height: 1px;
+    margin: 1.6rem 0;
+    background-color: white;
+    border: 0;
+    opacity: .25;
+  }
+  
+  &-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-link {
+      display: block;
+      padding: 0.8rem;
+      color: $link;
+
+      
+
+      &.active, &:hover, &:focus {
+        color: $link-active;
+      }
+    }
+
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  main {
+    overflow: overlay;
+    margin: $spacing-xs;
+  }
+}

@@ -1,0 +1,48 @@
+.navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: red;
+  padding: $spacing-xs;
+  // padding: 10 5 10 5;
+
+  &.scroll {
+    background-color: $yellow;
+  }
+
+  &-brand {
+    color: $white;
+    & img {
+      display: inline;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+  }
+}
+
+.nav {
+  &-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  &-link {
+    color: $link;
+    &.active, &:hover, &:focus {
+      color: $link-active;
+    }
+  }
+}

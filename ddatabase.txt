@@ -1,0 +1,40 @@
+Propiedades {
+  baño,
+  cuarto,
+  terreno,
+  construccion,
+  direccion,
+  descripcion,
+  precio,
+  tipo -  Tipo,
+  categoria - categoria,
+  estado - Estado,
+  created,
+  updated,
+}
+
+Tipo {
+  Casa,
+  Terreno,
+  lote,
+}
+
+Categorias {
+  renta,
+  venta
+}
+
+Estado {
+  disponible,
+  rentado,
+  apartado,
+  pausado
+}
+
+Agente {
+  nommbre,
+  apellido,
+  edad,
+  correo,
+  contraseña
+}

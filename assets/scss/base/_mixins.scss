@@ -10,6 +10,18 @@
         @content;
     }
 }
+
+@mixin landscape {
+    @media (min-width: #{$landscape}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$laptop}) {
+        @content;
+    }
+}
   
 @mixin desktop {
     @media (min-width: #{$desktop}) {

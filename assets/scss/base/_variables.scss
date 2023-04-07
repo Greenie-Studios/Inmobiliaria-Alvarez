@@ -4,22 +4,24 @@
 $main_font: 'Lato', sans-serif;
 
 // Media Queries sizes
-$phone: 480px;
+$phone: 485px;
 $tablet: 768px;
-$desktop: 1024px;
+$landscape: 992px;
+$laptop: 1024px;
+$desktop: 1400px;
 
 // Colors
 $black: #050505;
 $white: #FAFAFA;
 
-$yellow: #E08709;;
+$yellow: #e5ac3f;
 $green: #71B100;
 $darkGrey: #5A5A5A;
 $grey: #808080;
 $lightGrey: #d3d3d3;
 $red: #bd0707;
 
-$primary: #0d6efd;
+$primary: #e5ac3f;
 $success: #198754;
 $info: #0dcaf0;
 $warning: #ffc107;
@@ -35,8 +37,11 @@ $link-hover: rgba(255, 255, 255, 0.7);
 $link-disabled: rgba(255, 255, 255, 0.3);
 $link-active: rgba(255, 255, 255, 0.9);
 
-$spacing: 1.5rem;
-$spacing-long: 15rem;
+$spacing-xs: 1.5rem;
+$spacing-s: 5rem;
+$spacing-m: 8rem;
+$spacing-l: 10rem;
+$spacing-xl: 15rem;
 $border: 2rem;
 
 $thin: 300;

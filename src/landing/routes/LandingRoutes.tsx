@@ -1,14 +1,15 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { Navbar } from '../../ui';
-import { LandingPage } from '../pages';
+import { LandingPage, RentsPage, SalesPage } from '../pages';
 
 export const LandingRoutes = () => {
   return (
     <>
       <Navbar/>
       <Routes>
-        <Route path='marvel' element={<LandingPage />}/>
+        <Route path='/sales' element={<SalesPage />}/>
+        <Route path='/rents' element={<RentsPage />}/>
 
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/*' element={<Navigate to='/'/>}/>

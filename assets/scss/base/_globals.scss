@@ -3,8 +3,29 @@ html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
+    overflow: overlay;
     box-sizing: inherit;
 }
+
+* {
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $yellow;
+    }
+}
+
+
+
 body {
     font-family: $main_font;
     font-size: 1.6rem;
@@ -16,7 +37,7 @@ img {
 }
 p {
     color: $black;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .container {
     width: 95%;
@@ -35,9 +56,9 @@ picture {
     display: block;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: $main_font;
-    margin: math.div($spacing, 2) 0;
+    margin: math.div($spacing-xs, 2) 0;
     font-weight: 300;
     text-align: center;
 }
@@ -53,6 +74,12 @@ h3 {
 }
 h4 {
     font-size: 2.6rem;
+}
+h5 {
+    font-size: 2.2rem;
+}
+h6 {
+    font-size: 1.8rem;
 }
 
 button, .btn {

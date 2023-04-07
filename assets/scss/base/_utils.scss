@@ -1,6 +1,6 @@
 .section {
-    margin-top: math.div($spacing, 2);
-    margin-bottom: math.div($spacing, 2);
+    margin-top: math.div($spacing-xs, 2);
+    margin-bottom: math.div($spacing-xs, 2);
 }
 .content-centered {
     max-width: 80rem;
